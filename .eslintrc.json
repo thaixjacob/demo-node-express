@@ -15,9 +15,8 @@
     "sourceType": "module"
   },
   "rules": {
-    "indent": "off",
-    "@typescript-eslint/indent": "error",
-    "quotes": "off",
-    "@typescript-eslint/quotes": "warn"
+    "indent": ["Error", 2],
+    "@typescript-eslint/indent": ["Error", 2],
+    "object-curly-spacing": ["Error", "always"]
   }
 }
