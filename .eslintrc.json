@@ -3,7 +3,11 @@
     "browser": true,
     "es2021": true
   },
-  "extends": "xo",
+  "extends": [
+    "xo",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
   "overrides": [
     {
       "extends": ["xo-typescript"],
@@ -14,10 +18,11 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
+  "plugins": ["@typescript-eslint"],
+  "ignorePatterns": ["*/public//.js"],
+
   "rules": {
-    "indent": "off",
-    "@typescript-eslint/indent": "error",
-    "quotes": "off",
-    "@typescript-eslint/quotes": "warn"
+    "indent": ["Error", 2],
+    "object-curly-spacing": ["Error", "always"]
   }
 }
