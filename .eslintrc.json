@@ -22,8 +22,7 @@
 	"ignorePatterns": ["*/public//.js"],
 
 	"rules": {
-		"indent": ["Error", "tab"],
-		"@typescript-eslint/indent": ["Error", "tab"],
+		"indent": ["Error", 2],
 		"object-curly-spacing": ["Error", "always"]
 	}
 }
